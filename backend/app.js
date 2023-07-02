@@ -36,8 +36,8 @@ app.use(cookieParser());
 app.use((req, res, next) => {
   const { origin } = req.headers;
   const { method } = req;
+  console.log(origin);
   if (allowedCors.includes(origin)) {
-    console.log(origin);
     res.header('Access-Control-Allow-Origin', origin);
     res.header('Access-Control-Allow-Credentials', true);
   }
