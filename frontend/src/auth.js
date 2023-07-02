@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://api.mesto-ana-bear.nomoreparties.sbs';
+export const BASE_URL = 'https://api.mesto-ana-bear.nomoreparties.sbs';
 
 function checkResponse(res) {
   if (res.ok) {

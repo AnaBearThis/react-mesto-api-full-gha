@@ -111,7 +111,7 @@ class Api {
 }
 
 const api = new Api({
-    url: 'http://api.mesto-ana-bear.nomoreparties.sbs',
+    url: 'https://api.mesto-ana-bear.nomoreparties.sbs',
     headers: {
         'content-type': 'application/json',
         authorization: '1c3d7c79-b03c-416f-89d5-3375c3a2efb8'
