@@ -7,7 +7,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.61.86
+IP 158.160.61.86
 
 Frontend http://api.mesto-ana-bear.nomoreparties.sbs/
 

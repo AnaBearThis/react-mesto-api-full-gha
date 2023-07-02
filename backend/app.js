@@ -15,8 +15,8 @@ const BASE_URL = 'mongodb://0.0.0.0:27017/mestodb';
 const allowedCors = [
   'https://praktikum.tk',
   'http://praktikum.tk',
-  'http://mesto-ana-bear.nomoreparties.sbs',
-  'https://mesto-ana-bear.nomoreparties.sbs',
+  'mesto-ana-bear.nomoreparties.sbs',
+  // 'https://mesto-ana-bear.nomoreparties.sbs',
 ];
 
 mongoose
