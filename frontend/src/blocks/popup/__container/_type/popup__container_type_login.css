@@ -1,0 +1,5 @@
+.popup__container_type_login {
+    width: 430px;
+    padding: 60px 0;
+    row-gap: 32px;
+}

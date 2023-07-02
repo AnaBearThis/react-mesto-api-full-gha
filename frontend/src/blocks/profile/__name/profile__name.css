@@ -1,0 +1,24 @@
+.profile__name {
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+    display: inline;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* В макете у этого элемента точно такие же значения размера шрифта, высоты строки и тяжести, я перепроверила */
+
+@media screen and (max-width: 828px) {
+    .profile__name {
+        font-size: 27px;
+        line-height: 33px;
+    }
+}
+
+/* про то, чтобы текст был по центру, а кропка ред правее, наставник сказал не париться, мол это практически не реализуемо без абсолютного позиционирования */
