@@ -162,7 +162,7 @@ function App() {
                 } else {
                     setSuccess(true);
                     setTimeout(() => {
-                        navigate('/sign-in', {replace: true})
+                        navigate('/signin', {replace: true})
                     }, 3000)
                 }
                 console.log(isFail);
@@ -224,7 +224,7 @@ function App() {
             .then((res) => {
                 console.log(res);
                 setLoggedIn(false);
-                navigate('/sign-in', {replace: true})
+                navigate('/signin', {replace: true})
             })
             .catch((err) => {
                 console.log(err)
@@ -251,8 +251,8 @@ function App() {
                                     loggedIn={isLoggedIn}
                                 />}
                         />
-                        <Route path="/sign-in" element={< Login onLogin={handleLogin} />} />
-                        <Route path="/sign-up" element={< Register onRegister={handleRegister} onSuccess={isSuccess} onFail={isFail} onPopupClose={closeAllPopups} />} />
+                        <Route path="/signin" element={< Login onLogin={handleLogin} />} />
+                        <Route path="/signup" element={< Register onRegister={handleRegister} onSuccess={isSuccess} onFail={isFail} onPopupClose={closeAllPopups} />} />
                     </Routes>
                     <Footer/>
                     <EditAvatarPopup isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} onUpdateAvatar={handleUpdateAvatar} />
