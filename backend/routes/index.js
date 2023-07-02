@@ -9,7 +9,7 @@ router.use(auth);
 
 router.use('/users', userRoutes);
 router.use('/cards', cardRoutes);
-router.get('/', (req, res, next) => {
+router.get('/signout', (req, res, next) => {
   res.clearCookie('jwt');
   res.status(200).send({ message: 'Вы вышли из аккаунта' });
   next();

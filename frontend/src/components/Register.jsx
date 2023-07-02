@@ -57,7 +57,7 @@ function Register(props) {
                 <button type="submit" className="register__submit-button" value="Зарегистрироваться">Зарегистрироваться</button>
             </form>
             <div className="register__signin">
-                <Link to="/sign-in" className="register__login-link">Уже зарегистрированы? Войти</Link>
+                <Link to="/signin" className="register__login-link">Уже зарегистрированы? Войти</Link>
             </div>
             < InfoTooltip isSuccess={props.onSuccess} isFail={props.onFail} onClose={props.onPopupClose} />
         </div>

@@ -74,13 +74,15 @@ module.exports.login = (req, res, next) => {
           if (isValid) {
             const jwt = jsonWebToken.sign({
               _id: user._id,
+            // eslint-disable-next-line dot-notation
             }, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret');
+            console.log(JWT_SECRET);
             res.cookie('jwt', jwt, {
               maxAge: 604800,
               httpOnly: true,
               sameSite: true,
             });
-            console.log(res.req.cookies.jwt);
+            console.log(res.req);
             res.send(user);
           } else {
             throw new Error('Неверные данные пользователя');

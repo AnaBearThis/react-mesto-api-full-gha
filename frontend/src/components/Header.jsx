@@ -13,11 +13,11 @@ function Header(props) {
                     <Route path="/" element={
                         <div className='header__container'>
                             <p className='header__username'>{props.userEmail}</p>
-                            <Link className='header__link' to={'/sign-in'} onClick={props.onLogOut}>Выйти</Link>
+                            <Link className='header__link' to={'/signin'} onClick={props.onLogOut}>Выйти</Link>
                         </div>
                     } />   
-                    <Route path="/sign-in" element={<Link className='header__link' to='/sign-up'>Регистрация</Link>} />
-                    <Route path="/sign-up" element={<Link className='header__link' to='/sign-in'>Войти</Link>} />
+                    <Route path="/signin" element={<Link className='header__link' to='/signup'>Регистрация</Link>} />
+                    <Route path="/signup" element={<Link className='header__link' to='/signin'>Войти</Link>} />
                 </Routes>
               </div>  
         </header>

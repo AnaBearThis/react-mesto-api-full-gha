@@ -48,7 +48,7 @@ export const login = (email, password) => {
 }
 
 export const logout = () => {
-  return fetch(`${BASE_URL}`, {
+  return fetch(`${BASE_URL}/signout`, {
     method: 'GET',
     headers: {
       'Accept': 'application/json',
