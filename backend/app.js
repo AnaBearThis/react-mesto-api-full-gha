@@ -34,7 +34,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use((req, res, next) => {
-  const { origin } = req.headers;
+  const { origin } = req.headers.origin;
   const { method } = req;
   console.log(req.headers);
   if (allowedCors.includes(origin)) {
