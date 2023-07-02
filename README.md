@@ -7,8 +7,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.х
+IP-адрес 158.160.61.86
 
-Frontend https://...
+Frontend http://api.mesto-ana-bear.nomoreparties.sbs/
 
-Backend https://...
+Backend http://api.mesto-ana-bear.nomoreparties.sbs/
