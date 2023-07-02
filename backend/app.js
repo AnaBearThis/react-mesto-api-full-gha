@@ -16,7 +16,7 @@ const allowedCors = [
   'https://praktikum.tk',
   'http://praktikum.tk',
   'mesto-ana-bear.nomoreparties.sbs',
-  // 'https://mesto-ana-bear.nomoreparties.sbs',
+  'https://mesto-ana-bear.nomoreparties.sbs',
 ];
 
 mongoose
@@ -34,7 +34,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use((req, res, next) => {
-  const { origin } = req.headers;
+  const { origin } = req.headers.origin;
   const { method } = req;
   console.log(req.headers.origin);
   if (allowedCors.includes(origin)) {
