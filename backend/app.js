@@ -64,7 +64,7 @@ app.get('/crash-test', () => {
 });
 
 app.use(validateSign);
-app.use('/api', router);
+app.use('/', router);
 
 app.use(errorLogger);
 app.use(errors());
