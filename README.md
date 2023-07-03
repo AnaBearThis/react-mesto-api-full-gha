@@ -9,6 +9,6 @@
 
 IP 158.160.61.86
 
-Frontend http://api.mesto-ana-bear.nomoreparties.sbs/
+Frontend http://mesto-ana-bear.nomoreparties.sbs/
 
 Backend http://api.mesto-ana-bear.nomoreparties.sbs/
